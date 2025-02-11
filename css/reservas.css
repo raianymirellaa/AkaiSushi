@@ -1,0 +1,180 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Cabeçalho */
+header{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.logo{
+    height: 110px;
+    width: 140px;
+}
+
+.titulo01{
+    color: #ffffff;
+}
+
+
+/* Menu de navegação */
+
+nav ul{
+    list-style: none;
+
+}
+nav li{
+    display: inline-block;
+    margin-right: 25px;
+}
+nav a{
+    color: #e5f7ff;
+    text-decoration: none;
+}
+
+
+main{
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: -20px;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+}
+
+.text-section {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 50px;
+    text-align: justify; /* Garante que o texto fique alinhado à esquerda */
+    margin-top: -20px;
+}
+
+
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    margin: 0;
+    color: #ffffff;
+    margin-bottom: -20px;
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    margin: 10px 0;
+    color: #ff7e01;
+}
+
+
+
+.reservas {
+    padding: 20px;
+    max-width: 500px; /* Formulário mais estreito */
+    margin: 20px auto; /* Centraliza na tela */
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .reservas h1 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: #ff7e01;
+  }
+  
+  .reservas p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Coloca tudo em uma coluna */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Espaçamento entre os campos */
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 5px;
+  }
+  
+  form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-size: 16px;
+  }
+  
+  form input, form select, form textarea {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  form input:focus, form select:focus, form textarea:focus {
+    border-color: #ff7e01;
+  }
+  
+  form button {
+    background-color: #ff6b01;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #f19233;
+  }
+  
+
+  footer {
+    background-color: #000000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+    
+}
+
+footer {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer a {
+  color: blanchedalmond;
+  text-decoration: none;
+}

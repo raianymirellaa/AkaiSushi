@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor Gourmet</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
 
-<header>
-    <img src="logoo.png" alt="Logo" class="logo">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabor Gourmet</title>
+  <link rel="stylesheet" href="css/contato.css" />
+</head>
+
+<body>
+  <header>
+
+    <a href="index.html">
+      <img src="img/logoo.png" alt="Logo" class="logo" />
+    </a>
    
 
     <nav>
-        <ul>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
+      <ul>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<main>
-    <div class="container">
-            <h1>A ESSÊNCIA DA TRADIÇÃO JAPONESA</h1> 
-            <h2> Akai Sushi</h2>
+  <main>
+    <div class="text-section">
+      <h1>A ESSÊNCIA DA TRADIÇÃO JAPONESA</h1>
+      <h2>Akai Sushi</h2>
+
+    </div>
+
+    <div class="contact_item">
+      <img src="img/endereço.png" alt="Ícone de endereço"  style="height: 40px; width: 40px;">
+      <p>Rua dos Sabores, 123 - Centro, Cidade Gourmet</p>
+  </div>
+  <div class="contact_item">
+      <img src="img/telefone.png" alt="Ícone de telefone"  style="height: 40px; width: 40px;" >
+      <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+  </div>
+  <div class="contact_item">
+      <img src="img/email.png" alt="Ícone de e-mail" style="height: 40px; width: 40px;" >
+      <p><a href="mailto:fale.conosco@akai_sushi.com">fale.conosco@akai_sushi.com</a></p>
+  </div>
+  <div class="contact_item">
+      <a href="https://wa.me/5511999999999" target="_blank">
+          <img src="img/pngtree-whatsapp-icon-png-image_6315990.ico" alt="Ícone do WhatsApp" style="height: 40px; width: 40px;">
+      </a>
+      <p><a href="https://wa.me/5511999999999" target="_blank">Clique aqui para enviar uma mensagem</a></p>
+  </div>
+  <div class="contact_item">
+      <a href="https://instagram.com/akaisushi" target="_blank">
+          <img src="img/Instagram_icon.png" alt="Ícone do Instagram" style="height: 40px; width: 40px;">
+      </a>
+      <p><a href="https://instagram.com/akaisushi" target="_blank">@akaisushi</a></p>
+  </div>
+
     </div>
 
     <section class="contato">
-        <h2>Entre em Contato</h2>
-        <p>Estamos aqui para atender você. Entre em contato pelos canais abaixo:</p>
-        <ul>
-            <li><strong>Endereço:</strong> Rua Gastronômica, 123 - Centro</li>
-            <li><strong>Telefone:</strong> (11) 1234-5678</li>
-            <li><strong>Email:</strong> <a href="mailto:contato@saborgourmet.com">contato@saborgourmet.com</a></li>
-        </ul>
-        <h3>Fale Conosco</h3>
-        <form action="#" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-        <h3>Localização</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509485!2d144.95373531531868!3d-37.81627927975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1b1c1fd%3A0x5045675218ce720!2sMelbourne%2C+VIC%2C+Australia!5e0!3m2!1sen!2sbr!4v1497423207152" width="600" height="450" style="border:0;" allowfullscreen></iframe>
-    </section>
-</main>
 
-<footer>
- <p>&copy; 2025 Akai Sushi</p>
-</footer>
+      <div class="teste1">
+        <h2 style="font-size: 25px; margin-top: 50px;">Entre em Contato Conosco!</h2>
+        <section style="border: solid; padding: 20px; width: 500px; display: flex;">
+          <form action="#" method="post">
+            <img src="img/logoo.png" alt=""
+              style="align-content: end; width: 210px; height: 90px; padding-left: 135px;"><br>
+            <div class="form-group">
+              <label for="nome">Nome Completo:</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Coloque aqui sua reclamação..."></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+      <div class="teste2">
+        <h2 style="font-size: 25px; margin-top: 50px;">Nossa localização:</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098575!2d144.9537363153169!3d-37.8172099797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57744e1f8ec4c0!2sFederation+Square!5e0!3m2!1sen!2sbr!4v1614183991048!5m2!1sen!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen></iframe>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Akai Sushi - Todos Os Direitos Reservados </p>
+  </footer>
 
 </body>
+
 </html>

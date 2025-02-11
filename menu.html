@@ -1,41 +1,335 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sabor Gourmet</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
 
-<header>
-    <img src="logoo.png" alt="Logo" class="logo">
-   
-
-    <nav>
-        <ul>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <div class="container">
-        <div class="text-section">
-            <h1>A ESSÊNCIA DA TRADIÇÃO JAPONESA</h1> 
-            <h2> Akai Sushi</h2>
-        
+  <body>
+    <header>
       
+      <a href="index.html">
+        <img src="img/logoo.png" alt="Logo" class="logo" />
+      </a>
 
-        
-    
-</main>
+      <nav>
+        <ul>
+          <li><a href="reservas.html">Reservas</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<footer>
- <p>&copy; 2025 Akai Sushi</p>
-</footer>
+    <main>
+      <div class="text-section">
+        <h1>A ESSÊNCIA DA TRADIÇÃO JAPONESA</h1>
+        <h2>Akai Sushi</h2>
+      </div>
 
-</body>
+      <form id="menuForm">
+        <section id="sushi">
+          <h2 style="font-size: 18px">Sushi:</h2>
+
+          <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="sushi"
+                  value="32"
+                  id="hotRoll"
+                  onchange="calcularTotal()"
+                />
+  
+                <label for="hotRoll">
+                  <img src="img/hot-roll-com-salmao-grelhado-capa.webp" alt="Hot Roll
+                  Com Salmão Grelhado" style="width: 217px; height: 186px;"" />
+  
+                  <span> Hot Holl - R$ 32,00</span>
+                </label>
+              </li>
+
+            <li>
+                <input
+                  type="checkbox"
+                  name="sushi"
+                  value="35"
+                  id="tunaRoll"
+                  onchange="calcularTotal()"
+                />
+  
+                <label for="tunaRoll">
+                  <img
+                    src="img/tuna_roll.jpg"
+                    alt="Tuna Roll"
+                    style="width: 217px; height: 186px"
+                  />
+  
+                  <span> Tuna Roll - R$ 35,00</span>
+                </label>
+              </li>
+
+            <li>
+              <input
+                type="checkbox"
+                name="sushi"
+                value="42"
+                id="salmonRoll"
+                onchange="calcularTotal()"
+              />
+
+              <label for="salmonRoll">
+                <img
+                  src="img/salmon_roll.jpg"
+                  alt="Salmon Roll"
+                  style="width: 217px; height: 186px"
+                />
+
+                <span> Salmon Roll - R$ 42,00</span>
+              </label>
+            </li>
+
+            
+          </ul>
+        </section>
+
+        <section id="sashimi">
+          <h2 style="font-size: 18px">Sashimi:</h2>
+
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                name="sashimi"
+                value="35"
+                id="sashimiSalmao"
+                onchange="calcularTotal()"
+              />
+
+              <label for="sashimiSalmao">
+                <img
+                  src="img/sashimi_salmao.webp"
+                  alt="Sashimi de Salmão"
+                  style="width: 217px; height: 186px"
+                />
+
+                <span> Sashimi de Salmão - R$ 35,00</span>
+              </label>
+            </li>
+
+            <li>
+              <input
+                type="checkbox"
+                name="sashimi"
+                value="40"
+                id="sashimiAtum"
+                onchange="calcularTotal()"
+              />
+
+              <label for="sashimiAtum">
+                <img
+                  src="img/sashimi_atum.jpg"
+                  alt="Sashimi de Atum"
+                  style="width: 217px; height: 186px"
+                />
+
+                <span> Sashimi de Atum - R$ 40,00</span>
+              </label>
+            </li>
+
+            <li>
+              <input
+                type="checkbox"
+                name="sashimi"
+                value="45"
+                id="sashimiPolvo"
+                onchange="calcularTotal()"
+              />
+
+              <label for="sashimiPolvo">
+                <img
+                  src="img/sashimi_polvo.jpg"
+                  alt="Sashimi de Polvo"
+                  style="width: 217px; height: 186px"
+                />
+
+                <span> Sashimi de Polvo - R$ 45,00</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section id="bebidas">
+          <h2 style="font-size: 18px">Bebidas:</h2>
+
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                name="bebidas"
+                value="15"
+                id="geladoChaVerde"
+                onchange="calcularTotal()"
+              />
+
+              <label for="geladoChaVerde">
+                <img
+                  src="img/cha_verde.jpg"
+                  alt="Chá verde"
+                  style="width: 217px; height: 186px"
+                />
+
+                <span> Gelado Chá Verde- R$ 15,00</span>
+              </label>
+            </li>
+
+            <li>
+                <input
+                  type="checkbox"
+                  name="bebidas"
+                  value="12"
+                  id="cocaCola"
+                  onchange="calcularTotal()"
+                />
+  
+                <label for="cocaCola">
+                  <img
+                    src="img/coca_cola.webp"
+                    alt="Coca Cola"
+                    style="width: 217px; height: 186px"
+                  />
+  
+                  <span>Coca Cola- R$ 12,00</span>
+                </label>
+              </li>
+
+            <li>
+              <input
+                type="checkbox"
+                name="bebidas"
+                value="9"
+                id="aguaGasLimao"
+                onchange="calcularTotal()"
+              />
+
+              <label for="aguaGasLimao">
+                <img
+                  src="img/agua_com_limao.jpg"
+                  alt="Água com Gás e Limão"
+                  style="width: 217px; height: 186px"
+                />
+
+                <span> Água com Gás e Limão - R$ 9,00</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section id="sobremesas">
+          <h2 style="font-size: 18px">Sobremesas:</h2>
+
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                name="sobremesas"
+                value="15"
+                id="mochi"
+                onchange="calcularTotal()"
+              />
+
+              <label for="mochi">
+                <img
+                  src="img/mochi.webp"
+                  alt="Mochi"
+                  style="width: 217px; height: 186px"
+                />
+
+                <span> Mochi - R$ 15,00</span>
+              </label>
+            </li>
+
+            <li>
+              <input
+                type="checkbox"
+                name="sobremesas"
+                value="20"
+                id="ohagi"
+                onchange="calcularTotal()"
+              />
+
+              <label for="ohagi">
+                <img
+                  src="img/ohagi.webp"
+                  alt="Ohagi"
+                  style="width: 217px; height: 186px"
+                />
+
+                <span> Ohagi- R$ 20,00</span>
+              </label>
+            </li>
+
+            <li>
+              <input
+                type="checkbox"
+                name="sobremesas"
+                value="25"
+                id="wagashi"
+                onchange="calcularTotal()"
+              />
+
+              <label for="wagashi">
+                <img
+                  src="img/wagashi[.webp"
+                  alt="Wagashi"
+                  style="width: 217px; height: 186px"
+                />
+
+                <span> Wagashi - R$ 25,00</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <div id="total" style="margin-top: 20px; font-weight: bold">
+          Total: R$ 0,00
+        </div>
+
+        <button type="button" onclick="realizarPagamento()">
+          Realizar Pagamento
+        </button>
+      </form>
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Akai Sushi - Todos Os Direitos Reservados</p>
+    </footer>
+  </body>
 </html>
+
+<script>
+  function calcularTotal() {
+    const checkboxes = document.querySelectorAll(
+      'input[type="checkbox"]:checked'
+    );
+
+    let total = 0;
+
+    checkboxes.forEach((checkbox) => {
+      total += parseFloat(checkbox.value);
+    });
+
+    document.getElementById("total").innerText = `Total: R$ ${total.toFixed(
+      2
+    )}`;
+  }
+
+  function realizarPagamento() {
+    const total = document.getElementById("total").innerText;
+
+    alert(`O total da sua compra é ${total}. Por favor, finalize o pagamento.`);
+  }
+</script>
